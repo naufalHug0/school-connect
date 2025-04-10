@@ -1,0 +1,59 @@
+root/
+├── android/
+├── ios/
+├── src/
+│   ├── assets/
+│   │   ├── fonts/
+│   │   ├── images/
+│   │   └── svgs/
+│   ├── components/
+│   │   ├── common/
+│   │   ├── forms/
+│   │   ├── modals/
+│   │   └── navigation/
+│   ├── config/
+│   │   ├── api/
+│   │   ├── env/
+│   │   └── theme/
+│   ├── features/
+│   │   ├── feature1/
+│   │   │   ├── components/
+│   │   │   ├── screens/
+│   │   │   ├── hooks/
+│   │   │   └── services/
+│   │   ├── feature2/
+│   │   │   ├── components/
+│   │   │   ├── screens/
+│   │   │   ├── hooks/
+│   │   │   └── services/
+│   ├── hooks/
+│   ├── navigation/
+│   │   ├── RootNavigator.tsx
+│   │   ├── AppNavigator.tsx
+│   │   └── navigationUtils.ts
+│   ├── screens/
+│   │   ├── HomeScreen.tsx
+│   │   ├── LoginScreen.tsx
+│   │   └── ProfileScreen.tsx
+│   ├── services/
+│   │   ├── api/
+│   │   └── storage/
+│   ├── store/
+│   │   ├── slices/
+│   │   ├── middlewares/
+│   │   ├── store.ts
+│   │   └── selectors/
+│   ├── types/
+│   │   ├── api/
+│   │   ├── navigation/
+│   │   └── global.ts
+│   └── utils/
+│       ├── helpers/
+│       ├── validation/
+│       ├── constants.ts
+│       ├── logger.ts
+│       └── dateUtils.ts
+├── .gitignore
+├── App.tsx
+├── package.json
+└── tsconfig.json
