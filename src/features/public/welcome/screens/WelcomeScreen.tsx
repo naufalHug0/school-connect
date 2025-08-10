@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react"
 import { Button, Text, View } from "react-native-ui-lib"
 import {Image} from "react-native"
 import tailwind from "twrnc"
-import LAYOUT from "../../../../constant/Layout"
-import { PoppinsFont, ThemeColors } from "../../../../config/Theme"
+import LAYOUT from "../../../../constants/layout"
+import { PoppinsFont, ThemeColors } from "../../../../app/config/Theme"
 
 const WelcomeScreen = () => {
     return (

@@ -1,7 +1,7 @@
 import React from 'react'
 import { View } from 'react-native-ui-lib'
 import WelcomeScreen from '../features/public/welcome/screens/WelcomeScreen'
-import { ScreenRoutes } from '../constant/ScreenRoutes'
+import { ScreenRoutes } from '../constants/routes'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 
 const Stack = createNativeStackNavigator()

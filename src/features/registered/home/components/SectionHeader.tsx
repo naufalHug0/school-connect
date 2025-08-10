@@ -1,6 +1,6 @@
 import React from 'react'
 import { Text, View } from 'react-native-ui-lib'
-import { PoppinsFont, ThemeColors } from '../../../../config/Theme'
+import { PoppinsFont, ThemeColors } from '../../../../app/config/Theme'
 import tailwind from 'twrnc'
 
 interface SectionHeaderProp {

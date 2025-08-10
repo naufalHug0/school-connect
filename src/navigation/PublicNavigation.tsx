@@ -1,6 +1,6 @@
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 import React from 'react'
-import { ScreenRoutes } from '../constant/ScreenRoutes'
+import { ScreenRoutes } from '../constants/routes'
 import WelcomeScreen from '../features/public/welcome/screens/WelcomeScreen'
 import LoginScreen from '../features/public/auth/screens/LoginScreen'
 import HomeScreen from '../features/registered/home/screens/HomeScreen'

@@ -57,3 +57,101 @@ root/
 ├── App.tsx
 ├── package.json
 └── tsconfig.json
+
+v2
+project-root/
+│
+├── src/                          # All app source code
+│   ├── app/                      # App-level configs & entry points
+│   │   ├── App.tsx               # Main app component
+│   │   ├── navigation/           # Root navigation setup
+│   │   │   ├── RootNavigator.tsx
+│   │   │   ├── navigation.types.ts
+│   │   │   └── index.ts
+│   │   ├── providers/            # Global context providers
+│   │   │   ├── ThemeProvider.tsx
+│   │   │   ├── AuthProvider.tsx
+│   │   │   └── index.ts
+│   │   ├── hooks/                 # Global reusable hooks
+│   │   │   ├── useAppTheme.ts
+│   │   │   └── useAuth.ts
+│   │   ├── store/                 # Global state (Redux/Zustand/Jotai)
+│   │   │   ├── store.ts
+│   │   │   └── slices/
+│   │   └── utils/                 # App-wide utilities/helpers
+│   │       ├── constants.ts
+│   │       ├── logger.ts
+│   │       └── index.ts
+│   │
+│   ├── features/                  # Feature-based modules
+│   │   ├── auth/                  # Authentication feature
+│   │   │   ├── screens/           # Screens for this feature
+│   │   │   │   ├── LoginScreen.tsx
+│   │   │   │   ├── RegisterScreen.tsx
+│   │   │   │   └── ForgotPasswordScreen.tsx
+│   │   │   ├── components/        # Feature-specific UI components
+│   │   │   │   ├── LoginForm.tsx
+│   │   │   │   └── AuthHeader.tsx
+│   │   │   ├── hooks/             # Feature-specific hooks
+│   │   │   │   └── useLogin.ts
+│   │   │   ├── services/          # API calls related to auth
+│   │   │   │   └── auth.api.ts
+│   │   │   ├── types/             # Feature-specific types
+│   │   │   │   └── auth.types.ts
+│   │   │   └── index.ts
+│   │   │
+│   │   ├── home/                  # Example: Home feature
+│   │   │   ├── screens/
+│   │   │   │   └── HomeScreen.tsx
+│   │   │   ├── components/
+│   │   │   ├── services/
+│   │   │   └── index.ts
+│   │   │
+│   │   └── profile/               # Example: Profile feature
+│   │       ├── screens/
+│   │       │   └── ProfileScreen.tsx
+│   │       ├── components/
+│   │       ├── services/
+│   │       └── index.ts
+│   │
+│   ├── shared/                    # Cross-feature shared code
+│   │   ├── components/            # Reusable UI components
+│   │   │   ├── Button.tsx
+│   │   │   ├── Input.tsx
+│   │   │   ├── LoadingSpinner.tsx
+│   │   │   └── index.ts
+│   │   ├── hooks/                 # Reusable hooks
+│   │   │   ├── useDebounce.ts
+│   │   │   └── useFetch.ts
+│   │   ├── services/              # Common API logic
+│   │   │   ├── api.client.ts      # Axios or fetch wrapper
+│   │   │   └── index.ts
+│   │   ├── styles/                # Global styles/themes
+│   │   │   ├── colors.ts
+│   │   │   ├── spacing.ts
+│   │   │   ├── typography.ts
+│   │   │   └── index.ts
+│   │   └── utils/                 # Shared utilities
+│   │       ├── formatDate.ts
+│   │       ├── validators.ts
+│   │       └── index.ts
+│   │
+│   ├── assets/                    # Images, fonts, icons
+│   │   ├── images/
+│   │   │   └── logo.png
+│   │   ├── fonts/
+│   │   │   └── Roboto-Regular.ttf
+│   │   └── icons/
+│   │       └── home.svg
+│   │
+│   └── types/                     # Global TypeScript types
+│       ├── env.d.ts
+│       ├── navigation.d.ts
+│       └── index.d.ts
+│
+├── .env                           # Environment variables
+├── tsconfig.json
+├── package.json
+├── babel.config.js
+├── metro.config.js
+└── README.md

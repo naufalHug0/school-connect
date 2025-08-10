@@ -1,7 +1,7 @@
 import React from 'react'
 import { Text, View } from 'react-native-ui-lib'
 import tailwind from 'twrnc'
-import { PoppinsFont } from '../config/Theme'
+import { PoppinsFont } from '../../app/config/Theme'
 import { TextInput } from 'react-native'
 
 interface SCTextFieldProp {
